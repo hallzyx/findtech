@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta:wght@400&family=Cabin:wght@400;500;600&family=Changa:wght@300;500;600;700&family=Charm:wght@400;700&family=Inter:wght@400&family=Montserrat+Alternates:wght@500;700&family=Pacifico:wght@400&family=Roboto:wght@300;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --font-inter: 'Inter', sans-serif;
+  --font-title: 'Montserrat Alternates', sans-serif;
+  --font-p: 'Roboto', sans-serif;
+  --font-h2: 'Changa', sans-serif;
+  --font-link: 'Anta', sans-serif;
+  --font-capitulos: 'Cabin', sans-serif;
+  --font-logo: 'Pacifico', sans-serif;
+  --font-firstTrending: 'Charm', sans-serif;
+  --font-nav: 'Poppins', sans-serif;
+}
+@layer components{
+  .font-inter {
+  @apply font-sans;
+  font-family: var(--font-inter);
+}
+
+.font-title {
+  @apply font-sans;
+  font-family: var(--font-title);
+}
+
+.font-p {
+  @apply font-sans;
+  font-family: var(--font-p);
+}
+
+.font-h2 {
+  @apply font-sans;
+  font-family: var(--font-h2);
+}
+
+.font-link {
+  @apply font-sans;
+  font-family: var(--font-link);
+}
+
+.font-capitulos {
+  @apply font-sans;
+  font-family: var(--font-capitulos);
+}
+
+.font-logo {
+  @apply font-sans;
+  font-family: var(--font-logo);
+}
+
+.font-firstTrending {
+  @apply font-sans;
+  font-family: var(--font-firstTrending);
+}
+.font-nav {
+  @apply font-sans;
+  font-family: var(--font-nav);
+}
+
+}

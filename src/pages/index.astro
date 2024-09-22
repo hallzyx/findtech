@@ -1,16 +1,34 @@
 ---
-
+import { React_Header } from '../components/React_Header';
+import Hero from '../components/Hero.astro';
+import '/src/styles/main.css';
+import Benefits from '../components/Benefits.astro';
 ---
 
-<html lang="en">
+<html lang="en" class="bg-slate-100">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<title>Wasa</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<React_Header />
+		<Hero />
+
+		<section class="my-24 container mx-auto flex justify-around">
+			<h3 class="font-h2 text-[#a97f97] text-4xl w-[40rem]">Simplifica la gestión de tu inventario con tecnología avanzada.
+			</h3>
+			<p class="text-right w-[49rem]">En un entorno competitivo, cada segundo cuenta. 
+				Nuestro sistema automatizado te ofrece una solución integral que agiliza el control de inventarios, 
+				evitando pérdidas y optimizando tus procesos. Aumenta la precisión, reduce los costos operativos y 
+				dedícate a lo que realmente importa: hacer crecer tu negocio.</p>
+		</section>
+		<Benefits />
+
+		<h1 class="text-red-400">Titulo insano</h1>
 	</body>
+	
 </html>

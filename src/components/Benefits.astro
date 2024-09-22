@@ -1,0 +1,38 @@
+
+---
+const elements=[
+    {
+        name:"Control en tiempo real con sensores inteligentes.",
+        desc:"Nuestro sistema de faja transportadora automatiza el registro de productos con sensores avanzados, garantizando un inventario actualizado y preciso.",
+        icon:"fa-solid fa-house-signal",
+    },
+    {
+        name:"Acceso rápido y fácil a tus datos de inventario.",
+        desc:"Visualiza el estado de tu inventario en cualquier momento. Nuestro sistema organiza y muestra toda la información en una sola plataforma.",
+        icon:"fa-solid fa-bolt",
+    },
+    {
+        name:"Notificaciones instantáneas de irregularidades.",
+        desc:"Recibe alertas en tiempo real sobre discrepancias en tu inventario, manteniéndote informado para tomar decisiones inmediatas.",
+        icon:"fa-solid fa-bell",
+    },
+
+]
+---
+
+<section class="container mx-auto ">
+    <h3 class="font-h2 text-4xl text-center text-[#cd705d]">
+        Automatiza y controla todo tu inventario desde un solo sistema.
+    </h3>
+    <div class="flex justify-around gap-36">
+        {elements.map((item)=>{
+            return(
+                <div class="text-center mt-16">
+                    <i class={`${item.icon} text-7xl bg-gradient-to-r from-purple-400 to-orange-400 text-transparent bg-clip-text`}/>
+                    <h4 class="text-[#a97f97] font-h2 text-2xl mt-7">{item.name}</h4>
+                    <p class="mt-5">{item.desc}</p>
+                </div>
+            )
+        })}
+    </div>
+</section>
