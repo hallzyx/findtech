@@ -25,7 +25,7 @@ export const React_Header = () => {
                 <ul className='flex gap-12'>
                     {elementos.map((item)=>{
                         return(
-                            <li className='font-link text-xl'><a className='text-[#a97f97] hover:text-[#d4976d] transition-all' href={item.path}>{item.name}</a></li>         
+                            <li key={item.name} className='font-link text-xl'><a className='text-[#a97f97] hover:text-[#d4976d] transition-all' href={item.path}>{item.name}</a></li>         
                         )
                         
                     })}

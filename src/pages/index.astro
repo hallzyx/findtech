@@ -3,9 +3,11 @@ import { React_Header } from '../components/React_Header';
 import Hero from '../components/Hero.astro';
 import '/src/styles/main.css';
 import Benefits from '../components/Benefits.astro';
+import { Slider_Test } from '../components/Slider_Test';
+import Footer from '../components/Footer.astro';
 ---
 
-<html lang="en" class="bg-slate-100">
+<html lang="en" class="bg-slate-100"> 
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -18,7 +20,7 @@ import Benefits from '../components/Benefits.astro';
 		<React_Header />
 		<Hero />
 
-		<section class="my-24 container mx-auto flex justify-around">
+		<section class="my-36 container mx-auto flex justify-around">
 			<h3 class="font-h2 text-[#a97f97] text-4xl w-[40rem]">Simplifica la gestión de tu inventario con tecnología avanzada.
 			</h3>
 			<p class="text-right w-[49rem]">En un entorno competitivo, cada segundo cuenta. 
@@ -27,8 +29,31 @@ import Benefits from '../components/Benefits.astro';
 				dedícate a lo que realmente importa: hacer crecer tu negocio.</p>
 		</section>
 		<Benefits />
+		
 
-		<h1 class="text-red-400">Titulo insano</h1>
+		<section class="bg-black mt-36">
+			<div class="bg-gradient-to-r from-purple-400/50  to-orange-400/70 text-white py-12">
+				<div class=" container mx-auto">
+					<h3 class="font-h2 text-4xl text-orange-100">Controla tu inventario fácilmente</h3>
+					<p class="w-1/2 my-7 font-capitulos text-slate-100">
+						Únete a nuestra plataforma y automatiza el proceso de inventario con tecnología avanzada de sensores y códigos QR. 
+						Simplifica la gestión de tu stock y reduce costos operativos.
+					</p>
+					<div class="flex  gap-5 font-link">
+						<button class="bg-white border-2 border-white font-medium  px-3 py-2 text-[#a97f97]">
+							Registrate
+						</button>
+						<button class="border-2 border-white px-3 py-2">
+							Solicita más información
+						</button>
+					</div>
+				</div>
+				
+			</div>
+			
+		</section>
+		<Slider_Test client:load/>
+		<Footer />
 	</body>
 	
 </html>

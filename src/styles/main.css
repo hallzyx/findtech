@@ -15,6 +15,12 @@
   --font-logo: 'Pacifico', sans-serif;
   --font-firstTrending: 'Charm', sans-serif;
   --font-nav: 'Poppins', sans-serif;
+
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 0px;
+  --swiper-navigation-color: #d49764;
+
+  --swiper-pagination-color: #d49764;
 }
 @layer components{
   .font-inter {
