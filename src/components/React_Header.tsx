@@ -2,7 +2,7 @@ import React from 'react'
 
 const elementos=[
     {
-        name:"Afiliados",
+        name:"Productos",
         path:"#"
     },
     {
